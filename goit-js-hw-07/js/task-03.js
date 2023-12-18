@@ -16,8 +16,10 @@ const images = [
 function addGallery(){
   const ulAdd = document.querySelector(".gallery");
   images.forEach(image =>{
-  console.log(image.url);
-  
+  ulAdd.insertAdjacentHTML(
+    "beforebegin",
+    `<li class="imgContainer"><img class="images" alt="${image.alt}" src="${image.url}"><img></li>`
+  )
 })
   
 }
