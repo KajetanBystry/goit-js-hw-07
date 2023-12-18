@@ -17,7 +17,7 @@ function addGallery(){
   const ulAdd = document.querySelector(".gallery");
   images.forEach(image =>{
   ulAdd.insertAdjacentHTML(
-    "beforebegin",
+    "beforeend",
     `<li class="imgContainer"><img class="images" alt="${image.alt}" src="${image.url}"><img></li>`
   )
 })
