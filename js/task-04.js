@@ -6,8 +6,8 @@ function getRandomHexColor() {
 
 let number = 0 
 const boxDiv = document.querySelector("#boxes")
-const buttons = document.querySelectorAll("button");
-document.querySelector("input").addEventListener("input", value => {
+const buttons = document.querySelector("#controls").querySelectorAll("button");
+document.querySelector("#controls").querySelector("input").addEventListener("input", value => {
   number = value.target.value;
 });
 buttons[0].addEventListener("click", createBoxes)
